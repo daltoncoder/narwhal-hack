@@ -1,0 +1,1 @@
+In sui's narwhal library they bring in there protocol types just for being able to generate keys through the bin. If using narwhal crate as a library this leads to having to build almost 200 crates related to Move language and Sui's vm. Patching these 2 crates allows narwhal to not have to build all that unnecassary overhead.
